@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Review Sentiment</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
+    <h1>Restaurant Review Sentiment Analysis</h1>
+    <form method="POST" action="/result">
+        <textarea name="message" rows="5" cols="60" placeholder="Enter your restaurant review here..."></textarea><br><br>
+        <input type="submit" value="Analyze Sentiment">
+    </form>
+    {% if message %}
+        <h2>Review:</h2>
+        <p>{{ message }}</p>
+        <h2>Prediction:</h2>
+        <p style="color: {% if result == 1 %}green{% else %}red{% endif %}; font-weight: bold;">
+            {% if result == 1 %} Positive 😊 {% else %} Negative 😞 {% endif %}
+        </p>
+    {% endif %}
+</body>
+</html>
