@@ -68,3 +68,10 @@ This project performs sentiment analysis on restaurant reviews using Natural Lan
 - [Kaggle Datasets](https://www.kaggle.com/)
 - [Scikit-learn Documentation](https://scikit-learn.org/)
 - [NLTK Library](https://www.nltk.org/)
+
+---
+
+### ⚠️ Large Files Notice
+Due to GitHub's size limitations, some files like `.tsv` , '.csv' and model `.pkl` files may not display in the browser.
+
+However, they are available for download directly from this repository.
